@@ -1,296 +1,453 @@
-/* ===================================
-   LARGE TABLETS
-=================================== */
+/* =========================
+   TABLET
+========================= */
 
-@media (max-width:1100px){
+
+@media(max-width:1100px){
+
 
 .container{
+
     width:92%;
-}
-
-.hero-container,
-.about-container{
-    grid-template-columns:1fr;
-    text-align:center;
-    gap:60px;
-}
-
-.hero-content{
-    order:2;
-}
-
-.hero-image{
-    order:1;
-}
-
-.hero-buttons,
-.hero-social,
-.tech-stack{
-    justify-content:center;
-}
-
-.hero p{
-    margin:auto auto 35px;
-}
-
-.about-info{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.about-stats{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.skills-grid{
-    grid-template-columns:repeat(2,1fr);
-}
-
-.projects-grid{
-    grid-template-columns:1fr;
-}
-
-.featured{
-    grid-template-columns:1fr;
-}
-
-.contact-container{
-    grid-template-columns:1fr;
-}
 
 }
 
-/* ===================================
-   TABLETS
-=================================== */
 
-@media (max-width:768px){
-
-.header{
-    padding:0;
-}
-
-.navbar{
-    height:75px;
-}
-
-.menu-btn{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:24px;
-    cursor:pointer;
-}
 
 .nav-links{
 
-    position:fixed;
+    gap:20px;
 
-    top:75px;
-    right:-100%;
+}
+
+
+
+.hero-content h1{
+
+    font-size:55px;
+
+}
+
+
+
+.hero-container{
+
+    gap:30px;
+
+}
+
+
+
+.image-circle{
+
+    width:330px;
+
+    height:330px;
+
+}
+
+
+
+.skills-grid{
+
+    grid-template-columns:repeat(3,1fr);
+
+}
+
+
+
+.services-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.projects-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.certificate-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+
+.section{
+
+    padding:70px 0;
+
+}
+
+
+
+
+
+
+.navbar{
+
+    height:70px;
+
+}
+
+
+
+.nav-links{
+
+    display:none;
+
+    position:absolute;
+
+    top:70px;
+
+    left:0;
+
+    width:100%;
+
+    background:#08111f;
+
+    flex-direction:column;
+
+    text-align:center;
+
+    padding:30px 0;
+
+}
+
+
+
+.nav-links.active{
+
+    display:flex;
+
+}
+
+
+
+.menu-btn{
+
+    display:block;
+
+}
+
+
+
+
+
+
+
+.hero{
+
+    padding-top:100px;
+
+}
+
+
+
+
+
+.hero-container{
+
+    flex-direction:column-reverse;
+
+    text-align:center;
+
+}
+
+
+
+.hero-content h1{
+
+    font-size:42px;
+
+}
+
+
+
+.hero-content h3{
+
+    font-size:22px;
+
+}
+
+
+
+.typing{
+
+    font-size:25px;
+
+}
+
+
+
+
+
+.hero-content p{
+
+    margin:auto;
+
+    margin-top:20px;
+
+}
+
+
+
+.hero-buttons{
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.hero-social{
+
+    justify-content:center;
+
+}
+
+
+
+.image-circle{
 
     width:260px;
 
-    height:calc(100vh - 75px);
+    height:260px;
 
-    background:#111827;
+}
+
+
+
+
+
+
+
+.about-container{
 
     flex-direction:column;
 
-    justify-content:flex-start;
-
-    align-items:center;
-
-    padding-top:50px;
-
-    transition:.4s;
+    text-align:center;
 
 }
 
-.nav-links.active{
-    right:0;
+
+
+.about-image img{
+
+    width:280px;
+
+    height:280px;
+
+    margin:auto;
+
 }
 
-.hero{
-    padding-top:120px;
-}
 
-.hero h1{
-    font-size:50px;
-}
-
-.hero h2{
-    font-size:28px;
-}
-
-.hero h3{
-    font-size:24px;
-}
-
-.hero p{
-    font-size:15px;
-}
-
-.hero-buttons{
-    flex-direction:column;
-    align-items:center;
-}
-
-.btn{
-    width:240px;
-}
-
-.image-circle{
-    width:320px;
-    height:320px;
-}
 
 .about-info{
+
     grid-template-columns:1fr;
+
 }
 
-.about-stats{
-    grid-template-columns:1fr 1fr;
+
+
+.services-grid,
+
+.skills-grid,
+
+.projects-grid,
+
+.certificate-grid{
+
+    grid-template-columns:1fr;
+
 }
 
-.skills-grid{
-    grid-template-columns:1fr;
+
+
+
+
+.service-card,
+
+.skill-card,
+
+.project-card{
+
+    padding:25px;
+
 }
+
+
+
+
+
+.project-card h3{
+
+    font-size:24px;
+
+}
+
+
 
 .project-buttons{
+
     flex-direction:column;
+
 }
 
-.timeline-container{
-    padding-left:25px;
+
+
+.project-buttons .btn{
+
+    width:100%;
+
 }
 
-.timeline-dot{
-    left:-37px;
-}
 
-.timeline-content{
-    padding:20px;
-}
+
+
+
+
 
 .contact-container{
+
     grid-template-columns:1fr;
-}
-
-.certificate-slider{
-    grid-template-columns:1fr;
-}
 
 }
 
-/* ===================================
-   MOBILE
-=================================== */
 
-@media (max-width:480px){
 
-.container{
-    width:94%;
+.contact-form{
+
+    padding:25px;
+
 }
 
-.logo{
-    font-size:28px;
+
+
+
+
+.timeline-container{
+
+    padding-left:20px;
+
 }
 
-.section{
-    padding:90px 0;
-}
 
-.section-title{
-    font-size:32px;
-}
-
-.hero h1{
-    font-size:38px;
-}
-
-.hero h2{
-    font-size:22px;
-}
-
-.hero h3{
-    font-size:20px;
-}
-
-.hero p{
-    font-size:14px;
-}
-
-.image-circle{
-    width:250px;
-    height:250px;
-}
-
-.hero-social{
-    justify-content:center;
-}
-
-.hero-social a{
-    width:48px;
-    height:48px;
-}
-
-.tech-stack{
-    justify-content:center;
-    gap:10px;
-}
-
-.tech-stack span{
-    font-size:13px;
-    padding:8px 14px;
-}
-
-.about-stats{
-    grid-template-columns:1fr;
-}
-
-.info-card{
-    flex-direction:column;
-    text-align:center;
-}
-
-.project-content{
-    padding:20px;
-}
-
-.project-content h3{
-    font-size:22px;
-}
-
-.project-tech{
-    justify-content:center;
-}
-
-.project-buttons{
-    flex-direction:column;
-}
-
-.certificate-card h3{
-    font-size:22px;
-}
-
-.timeline-content{
-    padding:18px;
-}
-
-.contact-card{
-    padding:20px;
-}
 
 .footer h2{
-    font-size:28px;
+
+    font-size:35px;
+
 }
 
-#backTop{
-    width:50px;
-    height:50px;
-    font-size:18px;
-    right:18px;
-    bottom:18px;
+
+
+#scroll-top{
+
+    right:20px;
+
+    bottom:20px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================
+   SMALL PHONES
+========================= */
+
+
+@media(max-width:450px){
+
+
+
+.hero-content h1{
+
+    font-size:35px;
+
+}
+
+
+
+.section-title{
+
+    font-size:30px;
+
+}
+
+
+
+.image-circle{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+
+
+.btn{
+
+    padding:12px 25px;
+
+}
+
+
+
+}
+
+@media(max-width:900px){
+
+.nav-links.active{
+
+    display:flex !important;
+
+}
+
+.menu-btn{
+
+    display:block !important;
+    cursor:pointer;
+    z-index:9999;
+
 }
 
 }
